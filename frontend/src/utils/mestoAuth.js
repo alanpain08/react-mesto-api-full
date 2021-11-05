@@ -11,9 +11,9 @@ const checkServerAnswer = (res) => {
 export const register = (email, password) => {
   return fetch(`${BASE_URL}/signup`, {
     method: "POST",
-    headers: {
+    /*headers: {
       "Content-Type": "application/json",
-    },
+    },*/
     body: JSON.stringify({ email, password }),
   }).then((res) => checkServerAnswer(res));
 };
@@ -21,9 +21,9 @@ export const register = (email, password) => {
 export const authorize = (email, password) => {
   return fetch(`${BASE_URL}/signin`, {
     method: "POST",
-    headers: {
+    /*headers: {
       "Content-Type": "application/json",
-    },
+    },*/
     credentials: 'include',
     body: JSON.stringify({ email, password }),
   }).then((res) => checkServerAnswer(res));
@@ -32,9 +32,9 @@ export const authorize = (email, password) => {
 export const getContent = () => {
   return fetch(`${BASE_URL}/users/me`, {
     method: "GET",
-    headers: {
+    /*headers: {
       "Content-Type": "application/json",
-    },
+    },*/
     credentials: 'include',
   }).then((res) => checkServerAnswer(res));
 };
