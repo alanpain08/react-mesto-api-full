@@ -1,0 +1,7 @@
+.auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0 500px;
+  box-sizing: border-box;
+}

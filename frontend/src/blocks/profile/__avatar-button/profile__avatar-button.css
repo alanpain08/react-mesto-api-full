@@ -1,0 +1,12 @@
+.profile__avatar-button {
+  background-image: url(../../../images/avatarButton.svg);
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  visibility: hidden;
+  width: 26px;
+  height: 26px;
+  border: none;
+  padding: 0;
+  background-color: transparent;
+}

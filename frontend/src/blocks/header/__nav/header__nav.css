@@ -1,0 +1,6 @@
+.header__nav {
+  font-size: 18;
+  line-height: 1.22;
+  display: flex;
+  align-items: baseline;
+}

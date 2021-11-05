@@ -1,0 +1,22 @@
+.element__like-button_active {
+  background-image: url(../../../../images/like_active.svg);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: white;
+  width: 22px;
+  height: 19px;
+  padding: 0;
+  border-color: white;
+  border-width: 0px;
+  align-self: center;
+  flex-shrink: 0;
+}
+
+@media screen and (min-width: 768px) {
+  .element__like-button_active:hover {
+    cursor: pointer;
+    opacity: 0.5;
+    transition: linear 0.3s;
+  }
+}

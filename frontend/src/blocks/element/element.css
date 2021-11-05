@@ -1,0 +1,27 @@
+.element {
+  position: relative;
+  max-width: 282px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #ffffff;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  .element {
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .element {
+    max-width: 200px;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .element {
+    max-width: 282px;
+  }
+}
