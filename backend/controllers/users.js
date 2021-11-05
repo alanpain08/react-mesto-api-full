@@ -140,7 +140,7 @@ const login = (req, res, next) => {
           maxAge: 3600000,
           httpOnly: true,
           sameSite: 'none',
-          // secure: true,
+          secure: true,
         })
         .send({ token }); // если у ответа нет тела, можно использовать метод end
     })
@@ -151,7 +151,7 @@ const login = (req, res, next) => {
 
 const logout = (req, res) => {
   res.clearCookie('jwt', {
-    // secure: true,
+    secure: true,
     sameSite: 'none',
   }).send({ message: 'Выход осуществлен' });
 };

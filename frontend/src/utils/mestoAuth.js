@@ -1,4 +1,4 @@
-export const BASE_URL = "http://localhost:3000";
+export const BASE_URL = "https://allmestos.backend.nomoredomains.rocks";
 
 const checkServerAnswer = (res) => {
   if (res.ok) {

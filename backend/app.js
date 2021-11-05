@@ -16,8 +16,6 @@ const { PORT = 3000 } = process.env;
 const options = {
   origin: [
     'http://localhost:3000',
-    'http://localhost:3001',
-    'https://allmestos.backend.nomoredomains.rocks',
     'https://allmestos.nomoredomains.rocks',
   ],
   methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],

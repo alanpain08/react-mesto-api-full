@@ -1,9 +1,8 @@
 
 //Объект с данными для Апи
 const apiConfig = {
-  adress: `http://localhost:3000`,
+  adress: `https://allmestos.backend.nomoredomains.rocks`,
   headers: {
-    //authorization: "98f3d7dc-1729-485b-86b6-af7eebdd3027",
     "Content-Type": "application/json",
   },
 };
