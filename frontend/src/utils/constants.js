@@ -1,7 +1,7 @@
 
 //Объект с данными для Апи
 const apiConfig = {
-  adress: `https://allmestos.backend.nomoredomains.rocks`,
+  adress: `http://allmestos.backend.nomoredomains.rocks`,
   headers: {
     "Content-Type": "application/json",
   },

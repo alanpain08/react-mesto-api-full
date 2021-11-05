@@ -18,8 +18,6 @@ const options = {
     'http://localhost:3000',
     'http://allmestos.nomoredomains.rocks',
     'https://allmestos.nomoredomains.rocks',
-    'http://allmestos.backend.nomoredomains.rocks',
-    'https://allmestos.backend.nomoredomains.rocks',
   ],
   methods: ['GET', 'HEAD', 'PUT', 'PATCH', 'POST', 'DELETE'],
   preflightContinue: false,
