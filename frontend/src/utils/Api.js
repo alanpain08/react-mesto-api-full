@@ -16,14 +16,14 @@ class Api {
 
   getUserInfo() {
     return fetch(`${this._adress}/users/me`, {
-      //headers: this._headers,
+      headers: this._headers,
       credentials: 'include',
     }).then((res) => this._checkServerAnswer(res));
   }
 
   getInitialCards() {
     return fetch(`${this._adress}/cards`, {
-      //headers: this._headers,
+      headers: this._headers,
       credentials: 'include',
     }).then((res) => this._checkServerAnswer(res));
   }
@@ -31,7 +31,7 @@ class Api {
   editUserInfo({ name, about }) {
     return fetch(`${this._adress}/users/me`, {
       method: "PATCH",
-      //headers: this._headers,
+      headers: this._headers,
       credentials: 'include',
       body: JSON.stringify({
         name: name,
@@ -43,7 +43,7 @@ class Api {
   addCard({ name, link }) {
     return fetch(`${this._adress}/cards`, {
       method: "POST",
-      //headers: this._headers,
+      headers: this._headers,
       credentials: 'include',
       body: JSON.stringify({
         name: name,
@@ -55,7 +55,7 @@ class Api {
   putLike(cardId) {
     return fetch(`${this._adress}/cards/${cardId}/likes`, {
       method: "PUT",
-      //headers: this._headers,
+      headers: this._headers,
       credentials: 'include',
     }).then((res) => this._checkServerAnswer(res));
   }
@@ -63,7 +63,7 @@ class Api {
   deleteLike(cardId) {
     return fetch(`${this._adress}/cards/${cardId}/likes`, {
       method: "DELETE",
-      //headers: this._headers,
+      headers: this._headers,
       credentials: 'include',
     }).then((res) => this._checkServerAnswer(res));
   }
@@ -71,7 +71,7 @@ class Api {
   deleteCard(cardId) {
     return fetch(`${this._adress}/cards/${cardId}`, {
       method: "DELETE",
-      //headers: this._headers,
+      headers: this._headers,
       credentials: 'include',
     }).then((res) => this._checkServerAnswer(res));
   }
@@ -79,7 +79,7 @@ class Api {
   editAvatar({ avatar }) {
     return fetch(`${this._adress}/users/me/avatar`, {
       method: "PATCH",
-      //headers: this._headers,
+      headers: this._headers,
       credentials: 'include',
       body: JSON.stringify({
         avatar: avatar,
